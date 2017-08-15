@@ -2,11 +2,174 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+    <title>Веб-студия Нёрдс</title>
   </head>
+
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+<!--Шапка сайта-->
+  	<header class="main-header">
+  		<nav class="main-navigation">
+  			<a class="main-header-logo">
+  				<img src="img/index-logo.svg" width="368" height="153" alt="Логотип магазина Нёрдс">
+  			</a>
+  			<ul class="site-navigation">
+  				<li><a href="#">Студия</a></li>
+  				<li><a href="#">Клиенты</a></li>
+  				<li><a href="#">Магазин</a></li>
+  				<li><a href="#">Контакты</a></li>
+  			</ul>
+  			<p class="basket">
+  				<a href="#">Корзина</a>
+  			</p>
+  		</nav>
+  	</header>
+ 
+<!--Основной раздел сайта-->
+  	<main class="conteiner">
+  		<h1 class="visually-hidden">Веб-студия Нёрдс</h1> 
+
+<!--Раздел сайта - Преимущества-->
+  	<section class="advantage">
+  		<h2 class="visually-hidden">Преимущества</h2>
+  		<ul class="advantage-list">
+  			<li class="advantage-item">
+  				<h3>Долго, дорого, скрупулезно.</h3>
+  				<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+  				<a class="button advantage-item-button" href="#">Узнать больше</a>
+  			</li>
+  			<li class="advantage-item">
+  				<h3>Любим математику как никто другой</h3>
+  				<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+  				<a class="button advantage-item-button" href="#">Узнать больше</a>
+  			</li>
+  			<li class="advantage-item">
+  				<h3>Только ночь, только хардкор</h3>
+  				<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+  				<a class="button advantage-item-button" href="#">Узнать больше</a>
+  			</li>  			
+  		</ul>
+  	</section>   
+
+<!--Раздел сайта - Услуги-->
+  	<section class="services">
+  		<h2 class="visually-hidden">Услуги компании</h2>
+  		<ul class="services-list">
+  			<li class="service-item">
+  				<h3>Веб-сайты</h3>
+  				<p>Мир никогда не будет преждним после того, как увидит ваш сайт!</p>
+  				<a class="button service-item-button" href="#">Заказать</a>
+  			</li>
+  			<li class="service-item">
+  				<h3>Приложения</h3>
+  				<p>Покорите топ-10 приложений в AppStore и Google Play</p>
+  				<a class="button service-item-button" href="#">Заказать</a>
+  			</li>
+  			<li class="service-item">
+  				<h3>Презентации</h3>
+  				<p>Вы даже не подозреваете насколько вы изучительны!</p>
+  				<a class="button service-item-button" href="#">Заказать</a>
+  			</li>  			
+  		</ul>
+  	</section> 
+
+<!--Раздел сайта - О нас--> 
+	<section class="about">
+		<h2>Мы маленькая, но гордая дизаин-студия из Краснодара.</h2>
+		<p>Исповедуем принцип минимализма и чистоты.Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p> 
+		<!--не уверен с правильностью разметки блока ниже-->
+		<h3>Выполняем заказы на разработку:</h3>
+			<ul>
+				<li>Веб сайтов любой сложности</li>
+				<li>Мобильных приложений для iOs и Android</li>
+				<li>Слайд шоу и видео для корпоративных презентаций</li>
+			</ul>
+		<h3>С 2004 года любим точность во всем:</h3>
+			<ul>
+				<li>
+					<span>146%</span>
+				 	<p>Уровень самоотдачи</p>
+				</li>
+				<li>
+					<span>100%</span>
+					<p>Соблюдение сроков</p>
+				</li>
+				<li>
+					<span>50%</span>
+					<p>Минимальная предоплата</p>
+				</li>
+			</ul>
+			<!--____________________________________________-->
+	</section>
+
+<!--Раздел сайта - Наши работы-->
+	<section class="works">
+		<h2 class="visually-hidden">Наши работы</h2>
+		<ul class="works-list">
+			<li class="works-item">
+				<a class="work-link" href="#">
+					<img src="htmlacademy.png" alt="HTML Academy">
+				</a>
+			</li>
+			<li class="works-item">
+				<a class="work-link" href="#">
+					<img src="borodinsky.png" alt="Барбешоп Бородинский">
+				</a>
+			</li>
+			<li class="works-item">
+				<a class="work-link" href="#">
+					<img src="pink.png" alt="PINK">
+				</a>
+			</li>
+			<li class="works-item">
+				<a class="work-link" href="#">
+					<img src="mishka.png" alt="MISHKA">
+				</a>
+			</li>
+		</ul>
+	</section>
+	</main>
+
+<!--Подвал сайта-->
+	<footer class="main-footer">
+		<div class="footer-contacts">
+			<h2>NЁRDS DESIGN STUDIO</h2>
+			<p>191186, Санкт-Петербург<br>
+			ул. Б. Конюшенная, д. 19/8</p>
+			<p>тел. +7 (812) 275-75-75</p>
+
+			<a href="#">Напишите нам</a>
+		</div>
+		<!--Как вставить изображение карты?-->
+		<div class="footer-social">
+			<ul>
+				<li><a class="social-button" href="#">Вконтакте</a></li>
+				<li><a class="social-button" href="#">Фейсбук</a></li>
+				<li><a class="social-button" href="#">Инстаграм</a></li>
+			</ul>
+			<b>Давайте дружить, это выгодно!</b>
+			<p>Скидка 10% для друзей из социальных сетей.</p>
+		</div>
+	</footer> 
+
+<!--Форма - Напишите нам -->
+	<section class="modal modal-write">
+		<h2>Напишите нам</h2>
+
+		<form class="write-form" action="https://echo.htmlacademy.ru" method="post">
+			<p><span>Ваше имя:</span>
+				<input class="name-icon-user" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+			</p>
+			<p><span>Ваш e-mail:</span>
+				<input class="mail-icon-user" type="text" name="mail" placeholder="Для отправки ответа">
+			</p>
+			<p><span>Текст письма:</span>
+				<textarea class="write-icon-user" name="write">В свободной форме</textarea>
+			<button class="button" type="submit">Отправить</button>
+		</form>
+		<span class="modal-close">x</span>
+	</section>
+
 
   </body>
 </html>
