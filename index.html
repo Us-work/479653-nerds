@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Веб-студия Нёрдс</title>
+    <title>Дизайн-студия Нёрдс</title>
   </head>
 
   <body>
@@ -11,7 +11,7 @@
   	<header class="main-header">
   		<nav class="main-navigation">
   			<a class="main-header-logo">
-  				<img src="img/index-logo.svg" width="368" height="153" alt="Логотип магазина Нёрдс">
+  				<img src="img/index-logo.svg" width="368" height="153" alt="Дизайн-студия Нёрдс">
   			</a>
   			<ul class="site-navigation">
   				<li><a href="#">Студия</a></li>
@@ -19,20 +19,18 @@
   				<li><a href="#">Магазин</a></li>
   				<li><a href="#">Контакты</a></li>
   			</ul>
-  			<p class="basket">
-  				<a href="#">Корзина</a>
-  			</p>
-  		</nav>
+  		</nav>	
+  		<a class="basket" href="#">Корзина</a>
   	</header>
  
 <!--Основной раздел сайта-->
-  	<main class="conteiner">
-  		<h1 class="visually-hidden">Веб-студия Нёрдс</h1> 
+  	<main class="container">
+  		<h1 class="visually-hidden">Дизайн-студия Нёрдс</h1> 
 
 <!--Раздел сайта - Преимущества-->
-  	<section class="advantage">
+  	<section class="advantages">
   		<h2 class="visually-hidden">Преимущества</h2>
-  		<ul class="advantage-list">
+  		<ul class="advantages-list">
   			<li class="advantage-item">
   				<h3>Долго, дорого, скрупулезно.</h3>
   				<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
@@ -75,31 +73,32 @@
 
 <!--Раздел сайта - О нас--> 
 	<section class="about">
-		<h2>Мы маленькая, но гордая дизаин-студия из Краснодара.</h2>
+		<b>Мы маленькая, но гордая дизайн-студия из Краснодара.</b>
 		<p>Исповедуем принцип минимализма и чистоты.Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p> 
-		<!--не уверен с правильностью разметки блока ниже-->
-		<h3>Выполняем заказы на разработку:</h3>
-			<ul>
-				<li>Веб сайтов любой сложности</li>
-				<li>Мобильных приложений для iOs и Android</li>
-				<li>Слайд шоу и видео для корпоративных презентаций</li>
-			</ul>
-		<h3>С 2004 года любим точность во всем:</h3>
-			<ul>
-				<li>
-					<span>146%</span>
-				 	<p>Уровень самоотдачи</p>
-				</li>
-				<li>
-					<span>100%</span>
-					<p>Соблюдение сроков</p>
-				</li>
-				<li>
-					<span>50%</span>
-					<p>Минимальная предоплата</p>
-				</li>
-			</ul>
-			<!--____________________________________________-->
+		<div class="about-left">
+			<h3>Выполняем заказы на разработку:</h3>
+				<ul class="about-works">
+					<li>Веб сайтов любой сложности</li>
+					<li>Мобильных приложений для iOs и Android</li>
+					<li>Слайд шоу и видео для корпоративных презентаций</li>
+				</ul>
+		</div>
+		<div class="about-right">
+			<table class="about-progresses">
+				<caption>С 2004 года любим точность во всем:</caption>
+				<tr class="about-progresse-item">
+					<td>146<sup>%</sup></td>
+				 	<td>Уровень самоотдачи</td>
+				</tr>
+				<tr class="about-progresse-item">
+					<td>100<sup>%</sup></td>
+					<td>Соблюдение сроков</td>
+				</tr>
+				<tr class="about-progresse-item">
+					<td>50<sup>%</sup></td>
+					<td>Минимальная предоплата</td>
+				</tr>
+			</table>
 	</section>
 
 <!--Раздел сайта - Наши работы-->
@@ -133,19 +132,21 @@
 <!--Подвал сайта-->
 	<footer class="main-footer">
 		<div class="footer-contacts">
-			<h2>NЁRDS DESIGN STUDIO</h2>
-			<p>191186, Санкт-Петербург<br>
-			ул. Б. Конюшенная, д. 19/8</p>
-			<p>тел. +7 (812) 275-75-75</p>
+			<div class="container-footer-contacts">
+				<h2>Nёrds Desugn Studio</h2>
+				<p>191186, Санкт-Петербург<br>
+				ул. Б. Конюшенная, д. 19/8</p>
+				<p>тел. +7 (812) 275-75-75</p>
 
-			<a href="#">Напишите нам</a>
+				<a href="#">Напишите нам</a>
+			</div>
 		</div>
-		<!--Как вставить изображение карты?-->
+
 		<div class="footer-social">
 			<ul>
-				<li><a class="social-button" href="#">Вконтакте</a></li>
-				<li><a class="social-button" href="#">Фейсбук</a></li>
-				<li><a class="social-button" href="#">Инстаграм</a></li>
+				<li><a class="social-button social-button-vk" href="#">Вконтакте</a></li>
+				<li><a class="social-button social-button-fasebook" href="#">Фейсбук</a></li>
+				<li><a class="social-button social-button-inst" href="#">Инстаграм</a></li>
 			</ul>
 			<b>Давайте дружить, это выгодно!</b>
 			<p>Скидка 10% для друзей из социальных сетей.</p>
@@ -157,17 +158,17 @@
 		<h2>Напишите нам</h2>
 
 		<form class="write-form" action="https://echo.htmlacademy.ru" method="post">
-			<p><span>Ваше имя:</span>
-				<input class="name-icon-user" type="text" name="name" placeholder="Представьтесь, пожалуйста">
-			</p>
-			<p><span>Ваш e-mail:</span>
-				<input class="mail-icon-user" type="text" name="mail" placeholder="Для отправки ответа">
-			</p>
-			<p><span>Текст письма:</span>
-				<textarea class="write-icon-user" name="write">В свободной форме</textarea>
+			<label for="name">Ваше имя:
+				<input class="name-icon-user" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+			</label>
+			<label for="mail">Ваш e-mail:
+				<input class="mail-icon-user" type="text" name="mail" id="mail" placeholder="Для отправки ответа">
+			</label>
+			<label for="write">Текст письма:
+				<textarea class="write-icon-user" name="write" id="write">В свободной форме</textarea>
 			<button class="button" type="submit">Отправить</button>
 		</form>
-		<span class="modal-close">x</span>
+		<button class="button modal-close" type="submit">Закрыть</button>
 	</section>
 
 

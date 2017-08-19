@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Веб-студия Нёрдс</title>
+    <title>Дизайн-студия Нёрдс</title>
   </head>
 
   <body>
@@ -10,8 +10,8 @@
 <!--Шапка сайта-->
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/index-logo.svg" width="368" height="153" alt="Логотип магазина Нёрдс">
+        <a class="main-header-logo">
+          <img src="img/index-logo.svg" width="368" height="153" alt="Дизайн-студия Нёрдс">
         </a>
         <ul class="site-navigation">
           <li><a href="#">Студия</a></li>
@@ -19,10 +19,8 @@
           <li class="site-navigation-current"><a href="#">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <p class="basket">
-          <a href="#">Корзина</a>
-        </p>
-      </nav>
+      </nav>  
+      <a class="basket" href="#">Корзина</a>
     </header>
  
 <!--Основной раздел сайта-->
@@ -42,16 +40,16 @@
             <legend>Сетка:</legend>
               <ul>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-site" value="adaptive">
-                  Адаптивная
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-site" id="grid-site-adaptive" value="adaptive">
+                  <label for="grid-site-adaptive">Адаптивная</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-site" value="fixed">
-                  Фиксированная
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-site" id="grid-site-fixed" value="fixed">
+                  <label for="grid-site-fixed">Фиксированная</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-site" value="rubber">
-                  Резиновая
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-site" id="grid-site-rubber" value="rubber">
+                  <label for="grid-site-rubber">Резиновая</label>
                 </li>
             </ul>
           </fieldset>
@@ -59,24 +57,24 @@
             <legend>Особенности:</legend>
               <ul>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" checked>
-                Слайдер
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="slider" checked>
+                <label for="slider">Слайдер</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="block-features">
-                Блок преимуществ
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="block-features" id="block-features">
+                <label for="block-features">Блок преимуществ</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" checked>
-                Новости
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="news" checked>
+                <label for="news">Новости</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery">
-                Галерея
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="gallery">
+                <label for="gallery">Галерея</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="block-basket">
-                Корзина
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="block-basket" id="block-basket">
+                <label for="block-basket">Корзина</label>
               </li>
             </ul>
           </fieldset>
@@ -92,6 +90,8 @@
             <a href="#">По цене</a>
             <a href="#">По типу</a>
             <a href="#">По названию</a>
+            <a href="#">По возрастанию</a>
+            <a href="#">По убыванию</a>
         </div>
         <ul class="catalog-list">
           <li class="catalog-list-item">
@@ -144,10 +144,10 @@
           </li>
         </ul>
         <ul class="pagination-list">
-          <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
-          <li class="pagination-item"><a>2</a></li>
+          <li class="pagination-item pagination-item-current"><a>1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">Следующая</a></li>
+          <li class="pagination-item-next"><a href="#">Следующая</a></li>
         </ul>
       </section>
   </main>
@@ -155,42 +155,45 @@
 <!--Подвал сайта-->
   <footer class="main-footer">
     <div class="footer-contacts">
-      <h2>NЁRDS DESIGN STUDIO</h2>
-      <p>191186, Санкт-Петербург<br>
-      ул. Б. Конюшенная, д. 19/8</p>
-      <p>тел. +7 (812) 275-75-75</p>
+      <div class="container-footer-contacts">
+        <h2>Nёrds Desugn Studio</h2>
+        <p>191186, Санкт-Петербург<br>
+        ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. +7 (812) 275-75-75</p>
 
-      <a href="#">Напишите нам</a>
+        <a href="#">Напишите нам</a>
+      </div>
     </div>
-    <!--Как вставить изображение карты?-->
+
     <div class="footer-social">
       <ul>
-        <li><a class="social-button" href="#">Вконтакте</a></li>
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Инстаграм</a></li>
+        <li><a class="social-button social-button-vk" href="#">Вконтакте</a></li>
+        <li><a class="social-button social-button-fasebook" href="#">Фейсбук</a></li>
+        <li><a class="social-button social-button-inst" href="#">Инстаграм</a></li>
       </ul>
       <b>Давайте дружить, это выгодно!</b>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </div>
-  </footer>
+  </footer> 
 
 <!--Форма - Напишите нам -->
   <section class="modal modal-write">
     <h2>Напишите нам</h2>
 
     <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
-      <p><span>Ваше имя:</span>
-        <input class="name-icon-user" type="text" name="name" placeholder="Представьтесь, пожалуйста">
-      </p>
-      <p><span>Ваш e-mail:</span>
-        <input class="mail-icon-user" type="text" name="mail" placeholder="Для отправки ответа">
-      </p>
-      <p><span>Текст письма:</span>
-        <textarea class="write-icon-user" name="write">В свободной форме</textarea>
+      <label for="name">Ваше имя:
+        <input class="name-icon-user" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+      </label>
+      <label for="mail">Ваш e-mail:
+        <input class="mail-icon-user" type="text" name="mail" id="mail" placeholder="Для отправки ответа">
+      </label>
+      <label for="write">Текст письма:
+        <textarea class="write-icon-user" name="write" id="write">В свободной форме</textarea>
       <button class="button" type="submit">Отправить</button>
     </form>
-    <span class="modal-close">x</span>
-  </section> 
+    <button class="button modal-close" type="submit">Закрыть</button>
+  </section>
+
 
   </body>
 </html>
