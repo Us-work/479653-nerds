@@ -3,28 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>Дизайн-студия Нёрдс</title>
+    <link href="style.css" rel="stylesheet">
   </head>
 
   <body>
-
 <!--Шапка сайта-->
     <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="img/nerds-logo.svg" width="368" height="153" alt="Дизайн-студия Нёрдс">
-        </a>
-        <ul class="site-navigation">
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li class="site-navigation-current"><a href="#">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </nav>  
-      <a class="basket" href="#">Корзина</a>
+      <div class="container-header">
+        <nav class="main-navigation">
+          <a class="main-header-logo">
+            <img src="img/nerds-logo.svg" width="368" height="153" alt="Дизайн-студия Нёрдс">
+          </a>
+          <ul class="site-navigation">
+            <li><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li class="site-navigation-current"><a href="#">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>  
+        <a class="basket" href="#">Корзина</a>
+      </div>
     </header>
  
 <!--Основной раздел сайта-->
-    <main class="conteiner">
+    <main>
       <h1 class="page-title">Магазин готовых шаблонов</h1> 
       
 <!-- Фильтры выбора шаблонов-->
@@ -86,7 +88,7 @@
       <section class="list-products">
         <h2 class="visually-hidden">Список готовых шаблонов</h2>
         <div class="sort-products">
-          <h3>Сортировать:</h3>
+          <b>Сортировать:</b>
             <a href="#">По цене</a>
             <a href="#">По типу</a>
             <a href="#">По названию</a>
@@ -160,7 +162,6 @@
         <p>191186, Санкт-Петербург<br>
         ул. Б. Конюшенная, д. 19/8</p>
         <p>тел. +7 (812) 275-75-75</p>
-
         <a href="#">Напишите нам</a>
       </div>
     </div>
